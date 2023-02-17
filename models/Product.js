@@ -1,3 +1,5 @@
+//adding lines of code to re-commit all git instead of heroku
+
 // import important parts of sequelize library
 const { Model, DataTypes } = require('sequelize');
 // import our database connection from config.js

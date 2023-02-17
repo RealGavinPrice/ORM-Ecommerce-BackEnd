@@ -1,3 +1,4 @@
+//adding lines of code to re-commit all git instead of heroku
 const express = require('express');
 const routes = require('./routes');
 // import sequelize connection

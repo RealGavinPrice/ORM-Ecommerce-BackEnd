@@ -1,5 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 
+//adding lines of code to re-commit all git instead of heroku
+
 const sequelize = require('../config/connection.js');
 
 class Tag extends Model {}

@@ -1,3 +1,5 @@
+//adding lines of code to re-commit all git instead of heroku
+
 const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
