@@ -11,12 +11,20 @@ router.get('/', (req, res) => {
     Product.findAll({
       // Order by id in ascending order
       order: ['id'],
-      attributes: {
-        // Include these fields in the returned data
-        include: ['category_id', 'product_name', 'price']
+      attributes: ['id', 'product_name', 'price', 'stock'],
+    include: [
+      {
+        model: Category,
+        attributes: ['category_name']
+      },
+      {
+        model: Tag,
+        attributes: ['tag_name']
       }
-    }).then((res) => {
-      res.json(res);
+    ]
+  })
+  .then(res => {
+      res.json(res)
     });
     res.status(200).json(Product);
   } catch (err) {
